@@ -1,0 +1,50 @@
+version: "3.9"
+services:
+  AuthorsAppDB:
+    image: mysql
+    environment:
+      MYSQL_DATABASE: test
+      MYSQL_ROOT_PASSWORD: root
+    networks:
+      - network
+  BooksAppDB:
+    image: mysql
+    environment:
+      MYSQL_DATABASE: test
+      MYSQL_ROOT_PASSWORD: root
+    networks:
+      - network
+  AuthorsApp:
+    build: ./Dockerfiles/AuthorsAppDockerfile
+    image: authors_app_img
+    depends_on:
+      - AuthorsAppDB
+    networks:
+      - network
+  BooksApp:
+    build: ./Dockerfiles/BooksAppDockerfile
+    image: books_app_img
+    depends_on:
+      - BooksAppDB
+    networks:
+      - network
+  Gateway:
+    build: ./Dockerfiles/GatewayDockerfile
+    image: gateway_img
+    networks:
+      - network
+  Proxy:
+    build: ./Dockerfiles/ProxyDockerfile
+    image: proxy_img
+    ports:
+      - 8080:8080
+      - 8000:8000
+    networks:
+      - network
+  Frontend:
+    build: ./Dockerfiles/FrontendDockerfile
+    image: frontend_img
+    networks:
+      - network
+networks:
+  network:

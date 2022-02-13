@@ -1,0 +1,5 @@
+#!/bin/bash
+
+java -jar authors_app.jar &
+java -jar books_app.jar &
+java -jar gateway.jar &

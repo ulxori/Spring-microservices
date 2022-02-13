@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Edit author</title>
+  <link rel="stylesheet" type="text/css" href="../main.css">
+  <script type="module" src="author_edit.js" defer="defer"></script>
+</head>
+<body>
+<nav class="navigation-bar">
+  <ul>
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../authors_list/authors.html">Authors</a></li>
+  </ul>
+</nav>
+
+<div class="container">
+  <h1>Edit author</h1>
+  <form id="editForm">
+    <label for="name">Name:</label>
+    <input id="name" name="name"/><br>
+    <label for="surname">Surname:</label>
+    <input id="surname" name="surname"/>
+    <p>Is the author still alive?</p>
+    <label for="yes">yes</label>
+    <input type="radio" id="yes" name="isAlive" value="true" checked><br>
+    <label for="no" >no</label>
+    <input type="radio" id="no" name="isAlive" value="false"><br>
+    <input type="submit" name="Edit author" value="Edit author"/>
+  </form>
+
+</div>
+</body>
+</html>
+

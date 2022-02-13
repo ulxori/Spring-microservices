@@ -1,0 +1,27 @@
+GET http://localhost:8081/api/1/authors
+###
+
+GET http://localhost:8081/api/1/authors/1
+###
+
+POST http://localhost:8081/api/1/authors
+Content-Type: application/json
+
+{
+  "name": "Slawomir",
+  "surname": "Mrozek",
+  "isAlive": false
+}
+###
+
+DELETE http://localhost:8081/api/1/authors/2
+###
+
+PUT http://localhost:8081/api/1/authors/1
+Content-Type: application/json
+
+{
+  "name": "Fiodor",
+  "surname": "Dostojewskiiiiiiiiiiiiiiiiii",
+  "isAlive": false
+}

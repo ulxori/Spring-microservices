@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Author view</title>
+  <link rel="stylesheet" type="text/css" href="../main.css">
+  <script type="module" src="author_view.js" defer="defer"></script>
+</head>
+<body>
+  <nav class="navigation-bar">
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../authors_list/authors.html">Authors</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h1>Author</h1>
+    <h3>Name: <span id="name">name</span><br></h3>
+    <h3>Surname: <span id="surname">surname</span></h3>
+    <h2>Books</h2>
+    <table>
+      <thead>
+      <tr>
+        <th>Title</th>
+        <th>View</th>
+        <th>Edit</th>
+        <th>Delete</th>
+      </tr>
+      </thead>
+      <tbody id="tableBody">
+      </tbody>
+    </table>
+    <div class="btn-container">
+      <a id="addLink" href=""><button class="button-1">Add a new book</button></a>
+    </div>
+  </div>
+</body>
+</html>

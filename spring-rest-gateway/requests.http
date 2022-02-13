@@ -1,0 +1,37 @@
+GET http://localhost:8080/api/1/authors
+###
+
+GET http://localhost:8080/api/1/authors/1
+###
+
+GET http://localhost:8080/api/1/authors/1/books
+###
+
+GET http://localhost:8080/api/1/authors/1/books/1
+###
+
+POST http://localhost:8080/api/1/authors
+Content-Type: application/json
+
+{
+  "name": "Slawomir",
+  "surname": "Mrozek",
+  "alive": true
+}
+
+###
+POST http://localhost:8080/api/1/authors/4/books
+Content-Type: application/json
+
+{
+"title": "Tango",
+"numberOfPages": 100
+}
+###
+
+GET http://localhost:8080/api/1/authors/4/books
+###
+
+DELETE http://localhost:8080/api/1/authors/4
+
+

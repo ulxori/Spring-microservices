@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/spring-rest authors/AuthorsApplication.iml" filepath="$PROJECT_DIR$/spring-rest authors/AuthorsApplication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-rest books/BooksApp.iml" filepath="$PROJECT_DIR$/spring-rest books/BooksApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-rest-authors/demo.iml" filepath="$PROJECT_DIR$/spring-rest-authors/demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-rest-books/demo (1).iml" filepath="$PROJECT_DIR$/spring-rest-books/demo (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/frontend/frontend.iml" filepath="$PROJECT_DIR$/frontend/frontend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-rest-gateway/gateway.iml" filepath="$PROJECT_DIR$/spring-rest-gateway/gateway.iml" />
+    </modules>
+  </component>
+</project>
